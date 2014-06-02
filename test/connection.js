@@ -15,7 +15,7 @@ describe('Connection', function() {
             return conn.connect('./test/mock/db-config.json')
                 .then(function() {
                     mockedKnex.initialize.should.have.been.calledWithMatch({
-                        client: 'pg',
+                        client: 'mysql',
                         connection: {
                             charset: 'utf8',
                             database: 'test',
@@ -36,7 +36,7 @@ describe('Connection', function() {
                 heinzel: 'anton'
             }).then(function() {
                 mockedKnex.initialize.should.have.been.calledWithMatch({
-                    client: 'pg',
+                    client: 'mysql',
                     connection: {
                         heinzel: 'anton'
                     }
