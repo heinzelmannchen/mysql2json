@@ -1,0 +1,55 @@
+{
+  "name": "mysql2json",
+  "version": "0.1.2",
+  "description": "Reads the schema of a postgres db",
+  "main": "mysql2json.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "q": "~1.0.0",
+    "heinzelmannchen-fs": "git://github.com/heinzelmannchen/heinzelmannchen-fs",
+    "knex": "~0.5.8",
+    "commander": "~2.1.0",
+    "term-list": "~0.2.1",
+    "winston": "~0.7.2",
+    "underscore": "~1.6.0",
+    "cli-table": "~0.3.0",
+    "promptly": "~0.2.0",
+    "inquirer": "~0.4.1",
+    "mockery": "~1.4.0",
+    "mysql": "~2.3.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.18",
+    "mocha-as-promised": "~2.0.0",
+    "chai": "~1.9.0",
+    "chai-as-promised": "~4.1.0",
+    "underscore": "~1.6.0",
+    "chai-fuzzy": "~1.4.0",
+    "mocha-jshint": "0.0.7",
+    "mock-fs": "~2.2.0",
+    "sinon-chai": "~2.5.0",
+    "sinon": "~1.8.2"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "integration": "mocha integrationTests --reporter spec",
+    "drop-integration-db": "node integrationTests/db/drop.js",
+    "create-integration-db": "node integrationTests/db/create.js",
+    "my-create-integration-db": "node integrationTests/db/create.my.js"
+  },
+  "bin": {
+    "mysql2json": "bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heinzelmannchen/mysql2json.git"
+  },
+  "author": "Christoph Hermann & Sebastian Sprenger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heinzelmannchen/mysql2json/issues"
+  },
+  "homepage": "https://github.com/heinzelmannchen/mysql2json"
+}
