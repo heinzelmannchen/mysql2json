@@ -5,7 +5,7 @@
 
 mysql2json
 =======
-This module loads postgres meta data and returns it as json.
+This module loads mysql meta data and returns it as json.
 
 [![Build Status](https://travis-ci.org/heinzelmannchen/mysql2json.png?branch=master)](https://travis-ci.org/heinzelmannchen/heinzelmannchen-template)
 
